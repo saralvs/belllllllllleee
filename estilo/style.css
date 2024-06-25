@@ -95,26 +95,79 @@ div#texto > p {
 
 
 section.normal {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 50px;
-
-    background-color: white;
-
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     text-align: center;
-    color: var(--cor3);
+
+    background-color: var(--cor0);
 }
 
-section.normal > h1 {
-    font-family: var(--fonte-destaque);
-    font-size: 2em;
 
-    padding-bottom: 10px;
+#entradas {
+    background-image: url('imagens/pratos/prato01.jpg');
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+
+    background-size: 100% 100%;
+    display: inline-block;
 }
 
-section.normal > p{
-    font-size: 1em;
+#entradas:hover {
+    background-image: url('imagens/pratos/hover01.png');
+
+    transition: 0.5s;
 }
+
+#pp {
+    background-image: url('imagens/pratos/prato02.jpg');
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+#pp:hover {
+    background-image: url('imagens/pratos/hover02.png');
+
+    transition: 0.5s;
+}
+
+#bebidas {
+    background-image: url('imagens/pratos/prato03.jpg');
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+#bebidas:hover {
+    background-image: url('imagens/pratos/hover03.png');
+
+    transition: 0.5s;
+}
+
+#sobremesas {
+    background-image: url('imagens/pratos/prato04.jpg');
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+#sobremesas:hover {
+    background-image: url('imagens/pratos/hover04.png');
+
+    transition: 0.5s;
+}
+
+
 
 .apresentacao02 {
     background-image: url('../estilo/imagens/templates/home02.jpg');
@@ -124,6 +177,12 @@ section.normal > p{
     background-size: cover;
     background-attachment: fixed;
 }
+
+
+
+
+
+
 
 
 
