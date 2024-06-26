@@ -8,9 +8,8 @@
 :root {
    
     --cor0: #a60303;
-    --cor1: #36413e;
-    --cor2: #e77728;
-    --cor3: #ede580;
+    --cor1: #e77728;
+    --cor2: #ede580;
 
     --fonte-padrão: 'Josefin Sans', Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Noto Serif Display', 'cursive', sans-serif;
@@ -31,7 +30,7 @@ a {
 }
 
 nav {
-    background-color: var(--cor1);
+    background-color: var(--cor0);
 
     padding-top: 13px;
     padding-bottom: 13px;
@@ -41,6 +40,7 @@ nav {
 nav > a {
     text-decoration: none;
     font-variant: small-caps;
+    font-size: 12px;
     color: white;
 
     padding-left: 20px;
@@ -49,15 +49,16 @@ nav > a {
     padding-bottom: 5px;
 
     display: inline-block;
+    text-transform: uppercase;
 }
 
 nav > a:hover {
-    color: rgb(189, 189, 189);
+    font-weight: bold;
 }
 
 section.apresentacao {
     position: relative;
-    background-image: url(../estilo/imagens/templates/home03.jpg);
+    background-image: url(../estilo/imagens/templates/home.jpg);
     color: black;
 
     min-height: 100vh;
@@ -104,7 +105,7 @@ section.normal {
     padding-bottom: 10vh;
     text-align: center;
 
-    background-color: var(--cor3);
+    background-color: #F7F7F7;
 
     box-shadow: inset 2px 2px 6px 0px rgba(0, 0, 0, 0.199);
 }
@@ -175,23 +176,24 @@ section.normal a {
 
 #completo {
     text-decoration: none;
-    padding-top: 50px;
 
     display: block;
     max-width: 200px;
-    margin: auto;
-}
+    margin: 50px auto 0px auto;
 
-#completo p {
-    color: var(--cor0);
-    font-weight: bolder;
     font-size: 18px;
     text-shadow: rgba(0, 0, 0, 0.363) 0px 0px 1px;
+
+    background-color: var(--cor1);
+    color: black;
+    padding: 7px 25px 7px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
 }
 
 #completo:hover {
-    text-decoration: underline;
-    color: var(--cor0);
+    background-color: var(--cor0);
+    transition: 0.3s;
+    color: white;
 }
 
 
@@ -199,9 +201,9 @@ section.normal a {
 section.apresentacao02 {
     position: relative;
 
-    background-image: url('../estilo/imagens/templates/home02.jpg');
+    background-image: url('../estilo/imagens/templates/home01.jpg');
 
-    min-height: 100vh;
+    min-height: 160vh;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -214,12 +216,11 @@ div#boas-vindas {
     top: 0%;
 
     width: 50vw;
-    height: 80vh;
+    height: 60vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
 
-    background-color: var(--cor3);
-    
+    background-color: white;
 }
 
 div#boas-vindas > h1 {
@@ -229,12 +230,144 @@ div#boas-vindas > h1 {
     padding-bottom: 20px;
     font-size: 2.5em;
 
-    color: var(--cor0);
+    color: black;
 }
 
 div#boas-vindas > p {
     text-align: center;
+    color: black;
+    line-height: 2em;
+
+    max-width: 30vw;
+    max-height: 10vh;
+    margin: auto;
+}
+
+div#horario {
+    position: absolute;
+    left: -0.5%;
+    top: 50%;
+
+    width: 50vw;
+    height: 60vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    background-color: white;
+}
+
+div#horario > h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+
+    padding-bottom: 30px;
+    font-size: 2.5em;
+
+    color: black;
+}
+
+div#horario > p {
+    text-align: center;
+    color: black;
+    line-height: 2em;
+
+    max-width: 30vw;
+    max-height: 10vh;
+    margin: auto;
+}
+
+
+
+section#avaliacoes {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+
+    background-color: #F7F7F7;
+
+    box-shadow: inset 2px 2px 6px 0px rgba(0, 0, 0, 0.199);
+
+}
+
+div.pessoas {
+    display: inline-block;
+
+    height: 580px;
+    width: 300px;
+
+    margin-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+
+    background-color: white;
+}
+
+#avaliacoes img {
+    width: 200px;
+    height: 200px;
+}
+
+.pessoas > img {
+    margin-top: 40px;
+}
+
+.pessoas > h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: normal;
+
     color: var(--cor0);
+}
+
+.pessoas > p {
+    padding: 0px 20px 0px 20px;
+
+    font-weight: normal;
+}
+
+.pessoas > h3 {
+    padding-top: 20px;
+}
+
+footer {
+    background-color: var(--cor1);
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+footer > img {
+    display: block;
+    margin: auto;
+
+    padding-top: 10vh;
+    padding-bottom: 10px;
+}
+
+footer > h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+footer > h2 {
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 10vh;
+}
+
+footer > p {
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 3vh;
 }
 
 
